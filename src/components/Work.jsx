@@ -29,7 +29,7 @@
                         Workout Buddy (Full-Stack)
                     </span>
                     <div className="pt-8 text-center ">
-                      <a href='https://github.com/smaranbh7/Workout-app' target='_blank'>
+                      <a href='https://github.com/smaranbh7/Workout-app' rel="noopener noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2
                             bg-white text-gray-700 font-bold text-lg">Code</button>
                       </a>
@@ -47,7 +47,7 @@
                         Dice Game
                     </span>
                     <div className="pt-8 text-center ">
-                      <a href='https://github.com/smaranbh7/DiceGame' target='_blank'>
+                      <a href='https://github.com/smaranbh7/DiceGame' rel="noopener noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2
                             bg-white text-gray-700 font-bold text-lg">Code</button>
                       </a>
@@ -65,7 +65,7 @@
                         Weather Application
                     </span>
                     <div className="pt-8 text-center ">
-                      <a href='https://github.com/smaranbh7/weather-app' target='_blank'>
+                      <a href='https://github.com/smaranbh7/weather-app' rel="noopener noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2
                             bg-white text-gray-700 font-bold text-lg">Code</button>
                       </a>
@@ -83,7 +83,7 @@
                         Blog Post Application
                     </span>
                     <div className="pt-8 text-center ">
-                      <a href='https://github.com/smaranbh7/The-Blog-Wall' target='_blank'>
+                      <a href='https://github.com/smaranbh7/The-Blog-Wall' rel="noopener noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2
                             bg-white text-gray-700 font-bold text-lg">Code</button>
                       </a>
@@ -101,7 +101,7 @@
                         Movie Application
                     </span>
                     <div className="pt-8 text-center ">
-                      <a href='https://github.com/smaranbh7/Movie-app' target='_blank'>
+                      <a href='https://github.com/smaranbh7/Movie-app' rel="noopener noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2
                             bg-white text-gray-700 font-bold text-lg">Code</button>
                       </a>
