@@ -14,7 +14,7 @@ const About = () => {
           </div>
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
             <div className='sm:text-right text-4xl font-bold'>
-              <p>A Passionate Computer Science Student Seeking Internship Opportunities To Expand Skills In Software Development and Innovation.</p>
+              <p>A Passionate Computer Science Student</p>
             </div>
             <div>
               <p>I am 21-years old ,originally from Nepal, currently based on Kentucky, United States. I am a third year student at Northern Kentucky University majoring
