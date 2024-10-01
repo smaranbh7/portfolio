@@ -28,11 +28,11 @@ const About = () => {
           <div>
             {/* Text Section */}
             <p>
-              I am 21-years old, originally from Nepal, currently based in Northern Kentucky, United States. I am a third-year student at Northern Kentucky University majoring in Computer Science with a minor in Information Technology. I am currently learning backend (Node.js) and exploring full-stack web development. I love watching and playing Soccer. I am a big Cristiano Ronaldo & Real Madrid fan. One fun fact about me is that I can play guitar.
+              I am 21-years old, originally from Nepal, currently based on Kentucky, United States. I am a third-year student at Northern Kentucky University majoring in Computer Science with a minor in Information Technology. I am currently learning backend (Node.js) and exploring full-stack web development. I love watching and playing Soccer. I am a big Cristiano Ronaldo & Real Madrid fan. One fun fact about me is that I can play guitar.
             </p>
             <br />
             <p>
-              I was introduced to HTML and CSS in my junior year of high school. In my senior year, I was introduced to the 'C' programming language where I wrote my first 'Hello World' statement. After my high school graduation, I spent time learning Python and concepts like Object-Oriented Programming (using Python). Then I was introduced to Java in college and got a chance to learn concepts like Data Structures & Algorithms (using Java). In the middle of my sophomore year, I got interested in development and started learning web development technologies. Since I had experience with HTML/CSS and a base in JavaScript, I started learning React and building front-end projects. After mastering React, I am currently focused on learning backend technologies like Node.js, Express.js, and MongoDB.
+              I was introduced to HTML and CSS in my junior year of high school. In my senior year, I was introduced to the 'C' programming language where I wrote my first 'Hello World' statement. After my high school graduation, I spent time learning Python and concepts like Object-Oriented Programming (using Python). Then I was introduced to Java in college and got a chance to learn Data Structures & Algorithms (using Java). In the middle of my sophomore year, I got interested in development and started learning web development technologies. Since I had experience with HTML/CSS and a base in JavaScript, I started learning React and building front-end projects. After mastering React, I am currently focused on learning backend technologies like Node.js, Express.js, and MongoDB.
             </p>
           </div>
         </div>
