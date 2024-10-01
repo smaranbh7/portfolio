@@ -6,7 +6,6 @@ import {
   FaLinkedin
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-
 //import Logo from '../assets/logo.png';
 import { Link } from 'react-scroll';
 
@@ -121,7 +120,7 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          
+        
         </ul>
       </div>
     </div>
