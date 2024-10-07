@@ -33,6 +33,9 @@ const About = () => {
             <br />
             <p>
               I was introduced to HTML and CSS in my junior year of high school. In my senior year, I was introduced to the 'C' programming language where I wrote my first 'Hello World' statement. After my high school graduation, I spent time learning Python and concepts like Object-Oriented Programming (using Python). Then I was introduced to Java in college and got a chance to learn Data Structures & Algorithms (using Java). In the middle of my sophomore year, I got interested in development and started learning web development technologies. Since I had experience with HTML/CSS and a base in JavaScript, I started learning React and building front-end projects. After mastering React, I am currently focused on learning backend technologies like Node.js, Express.js, and MongoDB.
+              <br/><br/>
+              I am currently a Teaching Assistant for Introduction to Web Development (INF-120) at 
+              Northern Kentucky University.
             </p>
           </div>
         </div>
