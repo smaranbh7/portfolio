@@ -28,11 +28,11 @@
                         Ask Me (AI-powered Mock Interview Potal)
                     </span>
                     <div className="pt-8 text-center ">
-                      <a href='https://ask-me-delta-ten.vercel.app/' rel="noopener noreferrer">
+                      <a href='https://github.com/smaranbh7/Ask-Me' rel="noopener noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2
                             bg-white text-gray-700 font-bold text-lg">Code</button>
                       </a>
-                      <a href='https://ai-powred-mock-interview-portal.vercel.app/' rel="noopener noreferrer">
+                      <a href='https://ask-me-delta-ten.vercel.app/' rel="noopener noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2
                             bg-white text-gray-700 font-bold text-lg">Demo</button>
                       </a>
