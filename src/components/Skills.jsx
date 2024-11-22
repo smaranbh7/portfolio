@@ -11,6 +11,7 @@ import Mongo from '../assets/mongo.png';
 import Python from '../assets/python.png'
 import C from '../assets/c.png'
 import Java from '../assets/java.png'
+import NextJS from '../assets/next-js.png'
 
 
 const Skills = () => {
@@ -67,6 +68,10 @@ const Skills = () => {
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-20 mx-auto' src={Java} alt="Exoress icon" />
                     <p className='my-4'>JAVA</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='w-20 mx-auto' src={NextJS} alt="Exoress icon" />
+                    <p className='my-4'>Next JS</p>
                 </div>
             </div>
         </div>
