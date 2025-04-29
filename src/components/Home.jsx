@@ -39,8 +39,8 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            I'm a full-stack developer specializing in building exceptional digital experiences. 
-            Currently, I'm focused on building responsive full-stack web applications using MERN Stack.
+            I'm a full-stack web engineer specializing in building exceptional digital experiences. 
+            Currently, I'm focused on building responsive web applications using Java (Spring Boot) & JavaScript (React).
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
