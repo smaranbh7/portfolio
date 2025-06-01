@@ -25,11 +25,13 @@ import Spring from '../assets/spring.png';
 import Express from '../assets/express.png';
 import Kotlin from '../assets/kotlin.png';
 import SQL from '../assets/sql.png';
+import Pandas from '../assets/pandas.png';
+import Scikit from '../assets/scikit.png';
 
 const skillCategories = {
   'Languages': [
     { name: 'Java', icon: Java, description: 'Object-oriented programming, Enterprise applications backend, Data structures & algorithms' },
-    { name: 'Python', icon: Python, description: 'Data analysis' },
+    { name: 'Python', icon: Python, description: 'Data analysis, Machine learning' },
     { name: 'C/C++', icon: C, description: 'Systems programming' },
     { name: 'JavaScript', icon: JavaScript, description: 'ES6+, Full-stack development' },
     { name: 'HTML/CSS', icon: HTML, description: 'Semantic markup, Responsive design' },
@@ -42,6 +44,8 @@ const skillCategories = {
     { name: 'React', icon: ReactImg, description: 'Frontend development, Component-based architecture' },
     { name: 'Node.js', icon: Node, description: 'Backend JavaScript runtime' },
     { name: 'Express', icon: Express, description: 'Web application framework for Node.js' },
+    { name: 'Pandas', icon: Pandas, description: 'Data manipulation and analysis' },
+    { name: 'Scikit-learn', icon: Scikit, description: 'Machine learning library for Python' },
     { name: 'Tailwind', icon: Tailwind, description: 'Utility-first CSS framework' },
   ],
   'Developer Tools & Technologies': [
