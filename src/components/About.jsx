@@ -68,7 +68,7 @@ const About = () => {
               <div>
                 <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Experience</h3>
                 <p>
-                  Software Engineering Intern at Kroger Technology & Digital, working on enterprise-level applications and cloud solutions.
+                  Teaching Assistant at Northern Kentucky University for the course "Introduction to Web Development". Software Engineering Reasearch Assistant at HCI Lab, Northern Kentucky University.
                 </p>
               </div>
             </div>
@@ -90,7 +90,7 @@ const About = () => {
               <div>
                 <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Personal</h3>
                 <p>
-                  21-year-old from Nepal, passionate about technology and its potential to create positive change. Enjoy playing guitar and exploring new technologies in free time.
+                  21-year-old from Nepal, currently based on KY, United States. Passionate about technology and its potential to create positive change. Enjoy playing guitar and exploring new technologies in free time.
                 </p>
               </div>
             </div>
