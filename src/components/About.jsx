@@ -1,43 +1,91 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import myPhoto from '../assets/myPhoto.png';
+import { FaGraduationCap, FaCode, FaFlask, FaGuitar } from 'react-icons/fa';
+import { MdWork } from 'react-icons/md';
 
 const About = () => {
   return (
-    <div name='about' className='w-full min-h-screen bg-[#0a192f] text-gray-300 py-10'>
-      <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8'>
-          <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
-              About
-            </p>
-          </div>
-          <div></div>
-        </div>
+    <div name='about' className='w-full min-h-screen bg-[#0a192f] text-gray-300 py-16'>
+      <div className='max-w-[1000px] mx-auto p-4'>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className='text-center mb-12'
+        >
+          <h2 className='text-4xl font-bold mb-4 text-[#ccd6f6]'>About Me</h2>
+          <div className='w-20 h-1 bg-[#64ffda] mx-auto'></div>
+        </motion.div>
 
-        <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-          <div className='sm:text-right text-4xl font-bold'>
-            <p>A Passionate Computer Science Student</p>
-            {/* Image Section */}
+        <div className='grid md:grid-cols-2 gap-12 items-start'>
+          {/* Image Section */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className='sticky top-24'
+          >
             <img
               src={myPhoto}
-              alt="Profile"
-              className='mt-4 w-150 h-2000 mx-auto object-cover'
+              alt="Smaran Bhattarai"
+              className='rounded-lg w-full h-auto shadow-lg'
+              style={{ maxHeight: '600px', objectFit: 'cover', objectPosition: 'center' }}
             />
-          </div>
+          </motion.div>
 
-          <div>
-            {/* Text Section */}
-            <p>
-              I am 21-years old, originally from Nepal, currently based on Kentucky, United States. I am a third-year student at Northern Kentucky University majoring in Computer Science with a minor in Information Technology. I am currently learning backend (Node.js) and exploring full-stack web development. I love watching and playing Soccer. I am a big Cristiano Ronaldo & Real Madrid fan. One fun fact about me is that I can play guitar.
-            </p>
-            <br />
-            <p>
-              I was introduced to HTML and CSS in my junior year of high school. In my senior year, I was introduced to the 'C' programming language where I wrote my first 'Hello World' statement. After my high school graduation, I spent time learning Python and concepts like Object-Oriented Programming (using Python). Then I was introduced to Java in college and got a chance to learn Data Structures & Algorithms (using Java). In the middle of my sophomore year, I got interested in development and started learning web development technologies. Since I had experience with HTML/CSS and a base in JavaScript, I started learning React and building front-end projects. After mastering React, I am currently focused on learning Node/Next Js.
-              <br/><br/>
-              I served as a Teaching Assistant for Introduction to Web Development (INF-120) in College of Informatics at 
-              Northern Kentucky University last semsester(Fall 2024). I am currently serving as a Research Assistant at HCI Lab led by Prof Dr. Nicholas Caporusso.
-            </p>
-          </div>
+          {/* Content Section */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <div className='space-y-6'>
+              <div className='flex items-center space-x-3'>
+                <FaGraduationCap className='text-[#64ffda] text-2xl' />
+                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Education</h3>
+              </div>
+              <p className='text-[#8892b0] pl-9'>
+                Computer Science Senior at Northern Kentucky University with minors in Mathematics and Information Technology.
+                Originally from Nepal, now based in Kentucky, United States.
+              </p>
+
+              <div className='flex items-center space-x-3'>
+                <FaCode className='text-[#64ffda] text-2xl' />
+                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Technical Journey</h3>
+              </div>
+              <p className='text-[#8892b0] pl-9'>
+                Started with HTML/CSS in high school, progressed through C, Python (OOP), and Java (Data Structures & Algorithms).
+                Currently focused on full-stack development with React, Node.js, Spring Boot, and Next.js.
+              </p>
+
+              <div className='flex items-center space-x-3'>
+                <MdWork className='text-[#64ffda] text-2xl' />
+                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Experience</h3>
+              </div>
+              <p className='text-[#8892b0] pl-9'>
+                Teaching Assistant for Web Development (INF-120) at NKU's College of Informatics.
+                Currently serving as a Research Assistant at the HCI Lab under Prof. Dr. Nicholas Caporusso.
+              </p>
+
+              <div className='flex items-center space-x-3'>
+                <FaFlask className='text-[#64ffda] text-2xl' />
+                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Current Focus</h3>
+              </div>
+              <p className='text-[#8892b0] pl-9'>
+                Exploring backend development with Spring Boot and diving deeper into full-stack web development.
+                Passionate about creating exceptional digital experiences.
+              </p>
+
+              <div className='flex items-center space-x-3'>
+                <FaGuitar className='text-[#64ffda] text-2xl' />
+                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Personal</h3>
+              </div>
+              <p className='text-[#8892b0] pl-9'>
+                Soccer enthusiast and Cristiano Ronaldo & Real Madrid fan. Guitar player in my free time.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

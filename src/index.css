@@ -10,8 +10,22 @@
     }
     li {
         @apply px-4;
-        @apply cursor-pointer
+        @apply cursor-pointer;
     }
+}
+
+/* Navigation styles */
+.nav-link {
+    @apply relative text-gray-300 hover:text-[#64ffda] transition-colors duration-300;
+}
+
+.nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#64ffda] transition-all duration-300;
+}
+
+.nav-link:hover::after {
+    @apply w-full;
 }
 
 .content-div {
@@ -24,7 +38,7 @@
 .content-div:hover {
     background-image: linear-gradient(
         to right,
-        rgba(112, 157, 255, 0.8),
-        hsla(242, 74%, 61%, 0.8)   
+        rgba(100, 255, 218, 0.8),
+        rgba(100, 255, 218, 0.8)   
     )!important;
 }
