@@ -18,72 +18,81 @@ const About = () => {
           <div className='w-20 h-1 bg-[#64ffda] mx-auto'></div>
         </motion.div>
 
-        <div className='grid md:grid-cols-2 gap-12 items-start'>
-          {/* Image Section */}
+        <div className='grid md:grid-cols-2 gap-8'>
+          {/* Photo Section */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className='sticky top-24'
+            className='flex justify-center md:justify-start'
           >
             <img
               src={myPhoto}
-              alt="Smaran Bhattarai"
-              className='rounded-lg w-full h-auto shadow-lg'
-              style={{ maxHeight: '600px', objectFit: 'cover', objectPosition: 'center' }}
+              alt="My Photo"
+              className='rounded-lg w-full max-w-[300px] h-auto object-cover shadow-lg'
             />
           </motion.div>
 
-          {/* Content Section */}
+          {/* Bio Section */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className='space-y-6'
           >
-            <div className='space-y-6'>
-              <div className='flex items-center space-x-3'>
-                <FaGraduationCap className='text-[#64ffda] text-2xl' />
-                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Education</h3>
+            {/* Education */}
+            <div className='flex items-start space-x-4'>
+              <FaGraduationCap className='text-[#64ffda] text-2xl mt-1' />
+              <div>
+                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Education</h3>
+                <p>
+                  Computer Science senior at Northern Kentucky University with a minor in Mathematics and Information Technology.
+                </p>
               </div>
-              <p className='text-[#8892b0] pl-9'>
-                Computer Science Senior at Northern Kentucky University with minors in Mathematics and Information Technology.
-                Originally from Nepal, now based in Kentucky, United States.
-              </p>
+            </div>
 
-              <div className='flex items-center space-x-3'>
-                <FaCode className='text-[#64ffda] text-2xl' />
-                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Technical Journey</h3>
+            {/* Technical Journey */}
+            <div className='flex items-start space-x-4'>
+              <FaCode className='text-[#64ffda] text-2xl mt-1' />
+              <div>
+                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Technical Journey</h3>
+                <p>
+                  Passionate about full-stack development, with a strong foundation in Java, Python, and JavaScript. Currently exploring cloud technologies and microservices architecture.
+                </p>
               </div>
-              <p className='text-[#8892b0] pl-9'>
-                Started with HTML/CSS in high school, progressed through C, Python (OOP), and Java (Data Structures & Algorithms).
-                Currently focused on full-stack development with React, Node.js, Spring Boot, and Next.js.
-              </p>
+            </div>
 
-              <div className='flex items-center space-x-3'>
-                <MdWork className='text-[#64ffda] text-2xl' />
-                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Experience</h3>
+            {/* Experience */}
+            <div className='flex items-start space-x-4'>
+              <MdWork className='text-[#64ffda] text-2xl mt-1' />
+              <div>
+                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Experience</h3>
+                <p>
+                  Software Engineering Intern at Kroger Technology & Digital, working on enterprise-level applications and cloud solutions.
+                </p>
               </div>
-              <p className='text-[#8892b0] pl-9'>
-                Teaching Assistant for Web Development (INF-120) at NKU's College of Informatics.
-                Currently serving as a Research Assistant at the HCI Lab under Prof. Dr. Nicholas Caporusso.
-              </p>
+            </div>
 
-              <div className='flex items-center space-x-3'>
-                <FaFlask className='text-[#64ffda] text-2xl' />
-                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Current Focus</h3>
+            {/* Current Focus */}
+            <div className='flex items-start space-x-4'>
+              <FaFlask className='text-[#64ffda] text-2xl mt-1' />
+              <div>
+                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Current Focus</h3>
+                <p>
+                  Exploring modern web technologies and cloud platforms while maintaining a strong focus on software architecture and best practices.
+                </p>
               </div>
-              <p className='text-[#8892b0] pl-9'>
-                Exploring backend development with Spring Boot and diving deeper into full-stack web development.
-                Passionate about creating exceptional digital experiences.
-              </p>
+            </div>
 
-              <div className='flex items-center space-x-3'>
-                <FaGuitar className='text-[#64ffda] text-2xl' />
-                <h3 className='text-xl font-semibold text-[#ccd6f6]'>Personal</h3>
+            {/* Personal */}
+            <div className='flex items-start space-x-4'>
+              <FaGuitar className='text-[#64ffda] text-2xl mt-1' />
+              <div>
+                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Personal</h3>
+                <p>
+                  21-year-old from Nepal, passionate about technology and its potential to create positive change. Enjoy playing guitar and exploring new technologies in free time.
+                </p>
               </div>
-              <p className='text-[#8892b0] pl-9'>
-                Soccer enthusiast and Cristiano Ronaldo & Real Madrid fan. Guitar player in my free time.
-              </p>
             </div>
           </motion.div>
         </div>
