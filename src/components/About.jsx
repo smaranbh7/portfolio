@@ -28,7 +28,7 @@ const About = () => {
           >
             <img
               src={myPhoto}
-              alt="My Photo"
+              alt="Smaran Bhattarai"
               className='rounded-lg w-full max-w-[300px] h-auto object-cover shadow-lg'
             />
           </motion.div>
