@@ -9,7 +9,8 @@ import CancerPredction from "../assets/cancer_prediction.png";
 import NasaEpicImage from "../assets/NasaApp.jpg";
 import Ecommerce from "../assets/e-commerce.png";
 import BloodBond from "../assets/bloodBond.png";
-import ProjectManagement from  "../assets/projectManagement.png"
+import ProjectManagement from "../assets/projectManagement.png";
+import ConcertApp from "../assets/ConcertApp.png"
 
 const Work = () => {
   return (
@@ -74,7 +75,7 @@ const Work = () => {
             {/*Hover Effect */}
             <div className="opacity-0 group-hover:opacity-100 ">
               <span className="text-2xl font bold text-white tracking-wider ">
-               Project Management System (Full-Stack)
+                Project Management System (Full-Stack)
               </span>
               <div className="pt-8 text-center ">
                 <a
@@ -91,7 +92,32 @@ const Work = () => {
               </div>
             </div>
           </div>
-
+          <div
+            style={{ backgroundImage: `url(${ConcertApp})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md 
+                  flex justify-center text-center items-center mx-auto content-div "
+          >
+            {/*Hover Effect */}
+            <div className="opacity-0 group-hover:opacity-100 ">
+              <span className="text-2xl font bold text-white tracking-wider ">
+                Find Concert Pal -Find friends for concert(Full-Stack)
+              </span>
+              <div className="pt-8 text-center ">
+                <a
+                  href="https://github.com/smaranbh7/FindConcertPal"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    className="text-center rounded-lg px-4 py-3 m-2
+                          bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          
           <div
             style={{ backgroundImage: `url(${BloodBond})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md 
@@ -218,7 +244,7 @@ const Work = () => {
             </div>
           </div>
           {/* Project */}
-          
+
           <div
             style={{ backgroundImage: `url(${Dice})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md 
@@ -333,7 +359,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Project */}
           <div
             style={{ backgroundImage: `url(${NasaEpicImage})` }}
@@ -360,7 +386,6 @@ const Work = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
