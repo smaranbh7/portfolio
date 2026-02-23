@@ -28,6 +28,7 @@ import Pandas from '../assets/pandas.png';
 import Scikit from '../assets/scikit.png';
 import RabbitMQ from '../assets/rabbitmq.png';
 import Kafka from '../assets/kafka.png';
+import JUnit from '../assets/junit.png';
 
 const skillCategories = {
   'Languages': [
@@ -41,6 +42,7 @@ const skillCategories = {
   ],
   'Frameworks & Libraries': [
     { name: 'Spring Boot', icon: Spring, description: 'Enterprise Java backend framework, Microservices' },
+    { name: 'JUnit', icon: JUnit, description: 'Unit testing framework for Java applications' },
     { name: 'Next.js', icon: NextImg, description: 'Server-side rendering, Full-stack React' },
     { name: 'React', icon: ReactImg, description: 'Frontend development, Component-based architecture' },
     { name: 'Node.js', icon: Node, description: 'Backend JavaScript runtime' },
