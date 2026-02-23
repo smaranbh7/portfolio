@@ -90,7 +90,7 @@ const About = () => {
               <div>
                 <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Personal</h3>
                 <p>
-                  21-year-old from Nepal, currently based on KY, United States. Passionate about technology and its potential to create positive change. Enjoy playing guitar and exploring new technologies in free time.
+                  22-year-old currently based on KY, United States. Passionate about technology and its potential to create positive change. Enjoy playing guitar and exploring new technologies in free time.
                 </p>
               </div>
             </div>

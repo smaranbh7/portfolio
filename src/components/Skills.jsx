@@ -26,6 +26,8 @@ import Kotlin from '../assets/kotlin.png';
 import SQL from '../assets/sql.png';
 import Pandas from '../assets/pandas.png';
 import Scikit from '../assets/scikit.png';
+import RabbitMQ from '../assets/rabbitmq.png';
+import Kafka from '../assets/kafka.png';
 
 const skillCategories = {
   'Languages': [
@@ -50,6 +52,8 @@ const skillCategories = {
   'Developer Tools & Technologies': [
     { name: 'Git', icon: GitHub, description: 'Version control, Collaboration' },
     { name: 'Docker', icon: Docker, description: 'Containerization, Deployment' },
+    { name: 'RabbitMQ', icon: RabbitMQ, description: 'Message broker for asynchronous communication' },
+    { name: 'Kafka', icon: Kafka, description: 'Distributed event streaming platform' },
     { name: 'AWS', icon: AWS, description: 'Cloud services, Deployment' },
     { name: 'Azure', icon: Azure, description: 'Cloud platform, Services' },
     { name: 'Postman', icon: Postman, description: 'API testing and documentation' },
