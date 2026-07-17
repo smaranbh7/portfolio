@@ -31,7 +31,7 @@ const Home = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            I'm a Computer Science Student.
+            I'm a Software Engineer.
           </motion.h2>
           <motion.p 
             className='text-[#8892b0] py-4 max-w-[700px] text-lg'
@@ -40,7 +40,6 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             Specializing in building exceptional digital experiences. 
-            Currently focused on building responsive web applications using Java (Spring Boot) & JavaScript (React).
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
