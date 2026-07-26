@@ -2,67 +2,67 @@ import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import ParticlesBackground from './ParticlesBackground';
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.12, delayChildren: 0.1 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 16 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+};
 
 const Home = () => {
   return (
-    <div id='home' name='home' className='relative w-full h-screen overflow-hidden'>
-      <ParticlesBackground />
-      
-      {/* Main Content */}
-      <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full relative z-10'>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <p className='text-[#64ffda] text-lg font-mono'>Hi, my name is</p>
-          <motion.h1 
-            className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] mt-2'
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            Smaran Bhattarai
-          </motion.h1>
-          <motion.h2 
-            className='text-4xl sm:text-7xl font-bold text-[#8892b0] mt-2'
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            I'm a Software Engineer.
-          </motion.h2>
-          <motion.p 
-            className='text-[#8892b0] py-4 max-w-[700px] text-lg'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            Specializing in building exceptional digital experiences. 
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            <Link 
-              to="work" 
-              smooth={true} 
-              duration={500} 
-              offset={-80}
-              className="inline-block"
-            >
-              <button className='text-[#64ffda] group border-2 border-[#64ffda] px-6 py-3 my-2 flex items-center hover:bg-[#64ffda] hover:bg-opacity-10 transition-all duration-300'>
-                View Work
-                <span className='group-hover:rotate-90 duration-300'>
-                  <HiArrowNarrowRight className='ml-3' />
-                </span>
-              </button>
-            </Link>
-          </motion.div>
+    <div id="home" name="home" className="relative w-full min-h-screen overflow-hidden bg-ink">
+      <div className="absolute inset-0 bg-grid-pattern bg-grid [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]" />
+
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="relative z-10 max-w-[900px] mx-auto px-6 sm:px-8 flex flex-col justify-center min-h-screen"
+      >
+        <motion.div variants={item} className="flex items-center gap-2 mb-6">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-online opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-online" />
+          </span>
+          <p className="eyebrow">Software Engineer @ Vitia · Cincinnati, OH</p>
         </motion.div>
-      </div>
+
+        <motion.h1 variants={item} className="text-4xl sm:text-6xl font-display font-semibold text-ivory leading-[1.1]">
+          Smaran Bhattarai
+        </motion.h1>
+
+        <motion.h2 variants={item} className="text-2xl sm:text-4xl font-display font-medium text-ivory-muted mt-3">
+          I build backend systems and full-stack apps that ship.
+        </motion.h2>
+
+        <motion.p variants={item} className="text-ivory-muted py-6 max-w-[620px] text-base sm:text-lg leading-relaxed">
+          CS senior at Northern Kentucky University. Comfortable across Java/Spring Boot,
+          React, and the message queues and databases that hold it all together,
+          and currently exploring cloud infrastructure and distributed systems.
+        </motion.p>
+
+        <motion.div variants={item} className="flex flex-wrap items-center gap-4">
+          <Link to="work" smooth={true} duration={500} offset={-72}>
+            <button className="font-mono text-sm text-ink bg-signal px-6 py-3 flex items-center gap-2 rounded hover:brightness-110 transition-all duration-300">
+              View Work
+              <HiArrowNarrowRight />
+            </button>
+          </Link>
+          <Link to="contact" smooth={true} duration={500} offset={-72}>
+            <button className="font-mono text-sm text-ivory border border-border px-6 py-3 rounded hover:border-signal hover:text-signal transition-all duration-300">
+              Get in Touch
+            </button>
+          </Link>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

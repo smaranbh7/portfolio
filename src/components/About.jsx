@@ -1,100 +1,79 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import myPhoto from '../assets/myPhoto.png';
-import { FaGraduationCap, FaCode, FaFlask, FaGuitar } from 'react-icons/fa';
-import { MdWork } from 'react-icons/md';
+
+const spec = [
+  {
+    label: 'Role',
+    value: 'Software Engineer, Vitia (Full-time)',
+  },
+  {
+    label: 'Education',
+    value:
+      "B.S. Computer Science, Northern Kentucky University (minor in Mathematics & Information Technology), Class of 2026",
+  },
+  {
+    label: 'Focus',
+    value: 'Full-stack development, cloud platforms, and microservice architecture',
+  },
+  {
+    label: 'Core stack',
+    value: 'Java, Python, JavaScript',
+  },
+  {
+    label: 'Based in',
+    value: 'Cincinnati, OH',
+  },
+  {
+    label: 'Off duty',
+    value: 'Soccer, guitar, and side projects',
+  },
+];
 
 const About = () => {
   return (
-    <div name='about' className='w-full min-h-screen bg-[#0a192f] text-gray-300 py-16'>
-      <div className='max-w-[1000px] mx-auto p-4'>
+    <div name="about" className="w-full py-24 bg-ink">
+      <div className="max-w-[900px] mx-auto px-6 sm:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className='text-center mb-12'
+          className="mb-12"
         >
-          <h2 className='text-4xl font-bold mb-4 text-[#ccd6f6]'>About Me</h2>
-          <div className='w-20 h-1 bg-[#64ffda] mx-auto'></div>
+          <p className="eyebrow mb-3">About</p>
+          <h2 className="section-heading">A quick spec sheet</h2>
         </motion.div>
 
-        <div className='grid md:grid-cols-2 gap-8'>
-          {/* Photo Section */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className='flex justify-center md:justify-start'
-          >
-            <img
+        <div className="grid md:grid-cols-[340px_1fr] gap-10 items-stretch">
+          <div className="w-full max-w-[340px] h-full mx-auto md:mx-0">
+            <motion.img
+              initial={{ opacity: 0, x: -16 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
               src={myPhoto}
               alt="Smaran Bhattarai"
-              className='rounded-lg w-full max-w-[300px] h-auto object-cover shadow-lg'
+              className="rounded-lg w-full h-full object-contain border border-border"
             />
-          </motion.div>
+          </div>
 
-          {/* Bio Section */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className='space-y-6'
+          <motion.dl
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="border-t border-border"
           >
-            {/* Education */}
-            <div className='flex items-start space-x-4'>
-              <FaGraduationCap className='text-[#64ffda] text-2xl mt-1' />
-              <div>
-                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Education</h3>
-                <p>
-                  Bachelor's Of Science in Computer Science at Northern Kentucky University with a minor in Mathematics and Information Technology (Class of 2026).
-                </p>
+            {spec.map(({ label, value }) => (
+              <div
+                key={label}
+                className="grid grid-cols-[110px_1fr] sm:grid-cols-[140px_1fr] gap-4 py-4 border-b border-border"
+              >
+                <dt className="font-mono text-xs uppercase tracking-wide text-signal pt-0.5">
+                  {label}
+                </dt>
+                <dd className="text-ivory-muted leading-relaxed">{value}</dd>
               </div>
-            </div>
-
-            {/* Technical Journey */}
-            <div className='flex items-start space-x-4'>
-              <FaCode className='text-[#64ffda] text-2xl mt-1' />
-              <div>
-                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Technical Journey</h3>
-                <p>
-                  Passionate about full-stack development, with a strong foundation in Java, Python, and JavaScript. Currently exploring cloud technologies and microservices architecture.
-                </p>
-              </div>
-            </div>
-
-            {/* Experience */}
-            <div className='flex items-start space-x-4'>
-              <MdWork className='text-[#64ffda] text-2xl mt-1' />
-              <div>
-                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Experience</h3>
-                <p>
-                  Software Engineer at Vitia, Full-time 
-                </p>
-              </div>
-            </div>
-
-            {/* Current Focus */}
-            <div className='flex items-start space-x-4'>
-              <FaFlask className='text-[#64ffda] text-2xl mt-1' />
-              <div>
-                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Current Focus</h3>
-                <p>
-                  Exploring modern web technologies and cloud platforms while maintaining a strong focus on software architecture and best practices.
-                </p>
-              </div>
-            </div>
-
-            {/* Personal */}
-            <div className='flex items-start space-x-4'>
-              <FaGuitar className='text-[#64ffda] text-2xl mt-1' />
-              <div>
-                <h3 className='text-xl font-semibold mb-2 text-[#ccd6f6]'>Personal</h3>
-                <p>
-                  23-year-old currently based on KY, United States. Passionate about technology and its potential to create positive change. I love Soccer, enjoy playing guitar and exploring new technologies in free time.
-                </p>
-              </div>
-            </div>
-          </motion.div>
+            ))}
+          </motion.dl>
         </div>
       </div>
     </div>
