@@ -2,43 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
-        @apply font-[Raleway];
+        @apply font-body bg-ink text-ivory;
     }
-    li {
-        @apply px-4;
-        @apply cursor-pointer;
+
+    h1, h2, h3, h4 {
+        @apply font-display;
+    }
+
+    ::selection {
+        @apply bg-signal/30 text-ivory;
     }
 }
 
-/* Navigation styles */
-.nav-link {
-    @apply relative text-gray-300 hover:text-[#64ffda] transition-colors duration-300;
+@layer components {
+    .eyebrow {
+        @apply font-mono text-xs tracking-[0.2em] uppercase text-signal;
+    }
+
+    .section-heading {
+        @apply text-3xl sm:text-4xl font-display font-semibold text-ivory;
+    }
+
+    .tag-chip {
+        @apply font-mono text-xs px-2.5 py-1 rounded border border-border text-ivory-muted bg-surface;
+    }
+
+    .nav-link {
+        @apply relative font-mono text-sm text-ivory-muted hover:text-ivory transition-colors duration-300 cursor-pointer;
+    }
 }
 
-.nav-link::after {
-    content: '';
-    @apply absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#64ffda] transition-all duration-300;
-}
-
-.nav-link:hover::after {
-    @apply w-full;
-}
-
-.content-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-}
-
-.content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        rgba(100, 255, 218, 0.8),
-        rgba(100, 255, 218, 0.8)   
-    )!important;
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
 }

@@ -1,0 +1,33 @@
+export const skillCategories = {
+  Languages: [
+    "Java",
+    "Python",
+    "C/C++",
+    "JavaScript",
+    "HTML/CSS",
+    "SQL",
+    "Kotlin",
+  ],
+  "Frameworks & Libraries": [
+    "Spring Boot",
+    "JUnit",
+    "Next.js",
+    "React",
+    "Node.js",
+    "Express",
+    "Pandas",
+    "Scikit-learn",
+    "Tailwind CSS",
+  ],
+  "Tools & Platforms": [
+    "Git",
+    "Docker",
+    "RabbitMQ",
+    "Kafka",
+    "AWS",
+    "Azure",
+    "Postman",
+    "Jira",
+  ],
+  Databases: ["MongoDB", "PostgreSQL", "MySQL", "Oracle"],
+};
